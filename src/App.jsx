@@ -1,4 +1,4 @@
-import { fromArrayBuffer, writeArrayBuffer } from "geotiff";
+import { writeArrayBuffer } from "geotiff";
 import { useEffect, useState } from "react";
 import "./App.css";
 
@@ -7,7 +7,8 @@ function App() {
 
   return (
     <div>
-      <h1>GeoTIFF Writer</h1>
+      <h1>GeoTIFF Generator</h1>
+      <p>Generate a 4x4 geotiff with a NODATA hole in the middle.</p>
       <div>
         <a download="geotiff.tiff" href={geotiff}>
           Download geoTIFF
